@@ -18,7 +18,7 @@ export const NoteEditor = ({
         <h2 className="card-title">
           <input
             type="text"
-            placeholder="Note title"
+            placeholder="Record for the day"
             className="input-primary input input-lg w-full font-bold"
             value={title}
             onChange={(e) => setTitle(e.currentTarget.value)}
@@ -50,7 +50,7 @@ export const NoteEditor = ({
           className="btn-primary btn"
           disabled={title.trim().length === 0 || code.trim().length === 0}
         >
-          Save
+          Submit
         </button>
       </div>
     </div>
